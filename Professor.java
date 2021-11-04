@@ -1,7 +1,7 @@
 public class Professor extends Pessoa{
     private String departamento;
     private String nomeCurso;
-    private String salario;
+    private double salario;
 
     public void setDepartamento(String departamento){
         this.departamento = departamento;
@@ -15,9 +15,14 @@ public class Professor extends Pessoa{
         return this.nomeCurso;
     }
 
-    public void setSalario(String salario){
+    public void setSalario(double salario){
         this.salario = salario;
-    }public String getSalario(){
+    }public double getSalario(){
         return this.salario;
+    }
+
+    public double salarioLiquido(){
+        double novoSalario = this.salario - (0.15 * this.salario);
+        return novoSalario;
     }
 }

@@ -6,7 +6,7 @@ public class Aluno extends Pessoa{
 
     public void setCursos(String cursos){
         this.cursos = cursos;
-    }public String cursos(){
+    }public String getCursos(){
         return this.cursos;
     }
 
